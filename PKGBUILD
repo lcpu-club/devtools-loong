@@ -1,7 +1,6 @@
 # Maintainer: wszqkzqk <wszqkzqk@qq.com>
 
 pkgname=devtools-loong64
-epoch=1
 pkgver=1.2.1
 pkgrel=2
 pkgdesc='Tools for Arch Linux LoongArch package maintainers'

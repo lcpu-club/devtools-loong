@@ -2,7 +2,6 @@ pkgbase = devtools-loong64
 	pkgdesc = Tools for Arch Linux LoongArch package maintainers
 	pkgver = 1.2.1
 	pkgrel = 2
-	epoch = 1
 	url = https://gitlab.archlinux.org/archlinux/devtools
 	arch = x86_64
 	arch = loong64
