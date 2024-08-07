@@ -1,6 +1,6 @@
 --- /usr/share/devtools/makepkg.conf.d/x86_64.conf	2024-06-18 20:18:52.000000000 +0800
-+++ /home/wszqkzqk/projects/devtools-loong/makepkg-loong64.conf	2024-08-07 11:57:01.107387093 +0800
-@@ -35,18 +35,15 @@
++++ /home/wszqkzqk/projects/devtools-loong/makepkg-loong64.conf	2024-08-07 13:46:32.848592665 +0800
+@@ -35,18 +35,16 @@
  # ARCHITECTURE, COMPILE FLAGS
  #########################################################################
  #
@@ -16,7 +16,8 @@
 -        -fstack-clash-protection -fcf-protection \
 -        -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
 +CFLAGS="-mabi=lp64d -march=loongarch64 -mlsx -O2 -pipe -fno-plt -fexceptions \
-+        -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security \+        -fstack-clash-protection"
++        -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security \
++        -fstack-clash-protection"
  CXXFLAGS="$CFLAGS -Wp,-D_GLIBCXX_ASSERTIONS"
 -LDFLAGS="-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now \
 -         -Wl,-z,pack-relative-relocs"
@@ -24,12 +25,3 @@
  LTOFLAGS="-flto=auto"
  RUSTFLAGS="-Cforce-frame-pointers=yes"
  #-- Make Flags: change this for DistCC/SMP systems
-@@ -96,7 +93,7 @@
- #-- debug:      Add debugging flags as specified in DEBUG_* variables
- #-- lto:        Add compile flags for building with link time optimization
- #
--OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge debug lto)
-+OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge debug !lto)
- 
- #-- File integrity checks to use. Valid: md5, sha1, sha224, sha256, sha384, sha512, b2
- INTEGRITY_CHECK=(sha256)

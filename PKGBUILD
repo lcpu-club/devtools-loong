@@ -3,7 +3,7 @@
 pkgname=devtools-loong64
 epoch=1
 pkgver=1.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Tools for Arch Linux LoongArch package maintainers'
 arch=('x86_64' 'loong64')
 license=('GPL-3.0-or-later')
@@ -15,7 +15,7 @@ source=(makepkg-loong64.patch
         sogrep-loong64.patch
         valid-repos-loong64.sh)
 source_x86_64=(z-qemu-loong64-static-for-archpkg.conf)
-sha256sums=('2ca25e80ca10835dbc6dce8df47e5456ea74bf797f9d37d1c849acadbe29ac83'
+sha256sums=('ae488b3b9fc05b390aa63d63be422f7d97d84c5b9cfe5298ab94d4963a651773'
             'f6b6fea81ec0552dc19cc13e2104d06062f142c0dd7fa59be39dfd6d62eb597f'
             'dd871d8bacab29fa66f761ea96f3f2c60b8cb21d64909fd4f9242699fa58be56'
             'b0f4d2fb78849abe57a6250de42a4e768eec7dd5c09f16c84270a0c24cde5e6c')
