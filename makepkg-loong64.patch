@@ -1,5 +1,5 @@
 --- /usr/share/devtools/makepkg.conf.d/x86_64.conf	2024-06-18 20:18:52.000000000 +0800
-+++ /home/wszqkzqk/projects/devtools-loong/makepkg-loong64.conf	2024-08-07 13:46:32.848592665 +0800
++++ /home/wszqkzqk/projects/devtools-loong64/makepkg-loong64.conf	2024-08-07 18:05:19.068824443 +0800
 @@ -35,18 +35,16 @@
  # ARCHITECTURE, COMPILE FLAGS
  #########################################################################
@@ -15,7 +15,7 @@
 -        -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security \
 -        -fstack-clash-protection -fcf-protection \
 -        -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
-+CFLAGS="-mabi=lp64d -march=loongarch64 -mlsx -O2 -pipe -fno-plt -fexceptions \
++CFLAGS="-mabi=lp64d -march=loongarch64 -mlsx -O2 -pipe -fexceptions \
 +        -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security \
 +        -fstack-clash-protection"
  CXXFLAGS="$CFLAGS -Wp,-D_GLIBCXX_ASSERTIONS"
