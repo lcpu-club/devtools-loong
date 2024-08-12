@@ -1,0 +1,27 @@
+--- /home/wszqkzqk/projects/devtools-loong64/extra-loong64.conf	2024-08-07 11:41:56.420054947 +0800
++++ /home/wszqkzqk/projects/devtools-loong64/extra-staging-loong64.conf	2024-08-12 12:45:08.388126337 +0800
+@@ -70,14 +70,20 @@
+ # repo name header and Include lines. You can add preferred servers immediately
+ # after the header, and they will be used before the default mirrors.
+ 
+-#[core-testing]
+-#Server = https://mirrors.pku.edu.cn/loongarch/archlinux/$repo/os/$arch
++[core-staging]
++Server = https://mirrors.pku.edu.cn/loongarch/archlinux/$repo/os/$arch
++
++[core-testing]
++Server = https://mirrors.pku.edu.cn/loongarch/archlinux/$repo/os/$arch
+ 
+ [core]
+ Server = https://mirrors.pku.edu.cn/loongarch/archlinux/$repo/os/$arch
+ 
+-#[extra-testing]
+-#Server = https://mirrors.pku.edu.cn/loongarch/archlinux/$repo/os/$arch
++[extra-staging]
++Server = https://mirrors.pku.edu.cn/loongarch/archlinux/$repo/os/$arch
++
++[extra-testing]
++Server = https://mirrors.pku.edu.cn/loongarch/archlinux/$repo/os/$arch
+ 
+ [extra]
+ Server = https://mirrors.pku.edu.cn/loongarch/archlinux/$repo/os/$arch
