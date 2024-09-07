@@ -4,9 +4,9 @@ _pkgver=1.2.1
 _patchver=7
 pkgname=devtools-loong64
 pkgver=${_pkgver}.patch${_patchver}
-pkgrel=1
+pkgrel=2
 pkgdesc='Tools for Arch Linux LoongArch package maintainers'
-arch=('any')
+arch=('loong64' 'x86_64' 'riscv64' 'aarch64')
 license=('GPL-3.0-or-later')
 url='https://gitlab.archlinux.org/archlinux/devtools'
 depends=("devtools>=${_pkgver}")
