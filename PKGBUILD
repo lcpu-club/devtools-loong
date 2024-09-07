@@ -1,7 +1,7 @@
 # Maintainer: wszqkzqk <wszqkzqk@qq.com>
 
 _pkgver=1.2.1
-_patchver=6
+_patchver=7
 pkgname=devtools-loong64
 pkgver=${_pkgver}.patch${_patchver}
 pkgrel=1
@@ -21,9 +21,10 @@ sha256sums=('bd7509dc15a0c49a801d009733ec8c2df69ed5cb6e30aecdaa24c9f9920d5fc4'
             '598cf18e7edee2446c3b4661960fd50cbc812b1f28bc4e438efb620ffed518df'
             'edcee3ed42642f0794a772b6f13b1f8bfb327c5d2011ef82466886769ece2a3a'
             '1a508d14b8883a119caab7e60ce41893964bbc8f7c34ee0871a34b1aa9b613d5'
-            'aa3218120ea118babf698819dd7220cfd5bf4b3b9b1c6723fb94b5f1abe850b6')
+            '820cb7964fd724b88b3a4df87f3ca86b53c3d3e5c314024599dfc50afdcbc7a0')
 
 if [[ ! "$CARCH" =~ loong ]]; then
+  depends+=(qemu-user-static)
   source+=(z-qemu-loong64-static-for-archpkg.conf)
   sha256sums+=('0fa4957e6a2097a288036d18953969ff765912518f5b6a01f983a3d2f7f6a8e1')
 fi
