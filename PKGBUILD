@@ -1,28 +1,32 @@
 # Maintainer: wszqkzqk <wszqkzqk@qq.com>
 
+_pkgver=1.2.1
+_patchver=5
 pkgname=devtools-loong64
-pkgver=1.2.1.patch5
-pkgrel=1
+pkgver=${_pkgver}.patch${_patchver}
+pkgrel=2
 pkgdesc='Tools for Arch Linux LoongArch package maintainers'
-arch=('x86_64' 'loong64')
+arch=('any')
 license=('GPL-3.0-or-later')
 url='https://gitlab.archlinux.org/archlinux/devtools'
-depends=(devtools)
-depends_x86_64=(qemu-user-static)
+depends=("devtools>=${_pkgver}")
 source=(makepkg-loong64.patch
         pacman-extra-loong64.patch
         pacman-extra-testing-loong64.patch
         pacman-extra-staging-loong64.patch
         sogrep-loong64.patch
         valid-repos-loong64.sh)
-source_x86_64=(z-qemu-loong64-static-for-archpkg.conf)
 sha256sums=('bd7509dc15a0c49a801d009733ec8c2df69ed5cb6e30aecdaa24c9f9920d5fc4'
             '9f59291ef061b943304b876ebdcd0c1f55b1681168f0984d2b8ca7e9200ee496'
             '598cf18e7edee2446c3b4661960fd50cbc812b1f28bc4e438efb620ffed518df'
             'edcee3ed42642f0794a772b6f13b1f8bfb327c5d2011ef82466886769ece2a3a'
             'dd871d8bacab29fa66f761ea96f3f2c60b8cb21d64909fd4f9242699fa58be56'
             'b0f4d2fb78849abe57a6250de42a4e768eec7dd5c09f16c84270a0c24cde5e6c')
-sha256sums_x86_64=('0fa4957e6a2097a288036d18953969ff765912518f5b6a01f983a3d2f7f6a8e1')
+
+if [[ ! "$CARCH" =~ loong ]]; then
+  source+=(z-qemu-loong64-static-for-archpkg.conf)
+  sha256sums+=('0fa4957e6a2097a288036d18953969ff765912518f5b6a01f983a3d2f7f6a8e1')
+fi
 
 package() {
   install -Dm644 valid-repos-loong64.sh -t "$pkgdir"/usr/share/devtools/lib
