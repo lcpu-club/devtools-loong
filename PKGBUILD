@@ -1,10 +1,10 @@
 # Maintainer: wszqkzqk <wszqkzqk@qq.com>
 
 _pkgver=1.2.1
-_patchver=5
+_patchver=6
 pkgname=devtools-loong64
 pkgver=${_pkgver}.patch${_patchver}
-pkgrel=2
+pkgrel=1
 pkgdesc='Tools for Arch Linux LoongArch package maintainers'
 arch=('any')
 license=('GPL-3.0-or-later')
@@ -20,8 +20,8 @@ sha256sums=('bd7509dc15a0c49a801d009733ec8c2df69ed5cb6e30aecdaa24c9f9920d5fc4'
             '9f59291ef061b943304b876ebdcd0c1f55b1681168f0984d2b8ca7e9200ee496'
             '598cf18e7edee2446c3b4661960fd50cbc812b1f28bc4e438efb620ffed518df'
             'edcee3ed42642f0794a772b6f13b1f8bfb327c5d2011ef82466886769ece2a3a'
-            'dd871d8bacab29fa66f761ea96f3f2c60b8cb21d64909fd4f9242699fa58be56'
-            'b0f4d2fb78849abe57a6250de42a4e768eec7dd5c09f16c84270a0c24cde5e6c')
+            '1a508d14b8883a119caab7e60ce41893964bbc8f7c34ee0871a34b1aa9b613d5'
+            'aa3218120ea118babf698819dd7220cfd5bf4b3b9b1c6723fb94b5f1abe850b6')
 
 if [[ ! "$CARCH" =~ loong ]]; then
   source+=(z-qemu-loong64-static-for-archpkg.conf)

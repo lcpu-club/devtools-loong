@@ -1,7 +1,7 @@
 pkgbase = devtools-loong64
 	pkgdesc = Tools for Arch Linux LoongArch package maintainers
-	pkgver = 1.2.1.patch5
-	pkgrel = 2
+	pkgver = 1.2.1.patch6
+	pkgrel = 1
 	url = https://gitlab.archlinux.org/archlinux/devtools
 	arch = any
 	license = GPL-3.0-or-later
@@ -17,8 +17,8 @@ pkgbase = devtools-loong64
 	sha256sums = 9f59291ef061b943304b876ebdcd0c1f55b1681168f0984d2b8ca7e9200ee496
 	sha256sums = 598cf18e7edee2446c3b4661960fd50cbc812b1f28bc4e438efb620ffed518df
 	sha256sums = edcee3ed42642f0794a772b6f13b1f8bfb327c5d2011ef82466886769ece2a3a
-	sha256sums = dd871d8bacab29fa66f761ea96f3f2c60b8cb21d64909fd4f9242699fa58be56
-	sha256sums = b0f4d2fb78849abe57a6250de42a4e768eec7dd5c09f16c84270a0c24cde5e6c
+	sha256sums = 1a508d14b8883a119caab7e60ce41893964bbc8f7c34ee0871a34b1aa9b613d5
+	sha256sums = aa3218120ea118babf698819dd7220cfd5bf4b3b9b1c6723fb94b5f1abe850b6
 	sha256sums = 0fa4957e6a2097a288036d18953969ff765912518f5b6a01f983a3d2f7f6a8e1
 
 pkgname = devtools-loong64

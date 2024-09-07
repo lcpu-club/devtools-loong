@@ -4,11 +4,11 @@
 :
 
 _repos=(
-	core
-	extra
-	laur
+	core core-staging core-testing
+	extra extra-staging extra-testing
 )
 
 _build_repos=(
-	extra
+	core core-staging core-testing
+	extra extra-staging extra-testing
 )

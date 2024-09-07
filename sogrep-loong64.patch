@@ -10,7 +10,7 @@
  
  # globals
 -fallback_mirror='https://geo.mirror.pkgbuild.com'
-+fallback_mirror='https://mirrors.pku.edu.cn/loongarch/archlinux'
++fallback_mirror='https://loongarchlinux.lcpu.dev/loongarch/archlinux'
  : ${SOCACHE_DIR:="${XDG_CACHE_HOME:-${HOME}/.cache}/sogrep"}
  
 -arches=('x86_64')
