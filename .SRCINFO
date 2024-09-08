@@ -1,7 +1,7 @@
 pkgbase = devtools-loong64
 	pkgdesc = Tools for Arch Linux LoongArch package maintainers
 	pkgver = 1.2.1.patch7
-	pkgrel = 2
+	pkgrel = 3
 	url = https://gitlab.archlinux.org/archlinux/devtools
 	arch = loong64
 	arch = x86_64
