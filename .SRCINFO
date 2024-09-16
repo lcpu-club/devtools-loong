@@ -1,7 +1,7 @@
 pkgbase = devtools-loong64
 	pkgdesc = Tools for Arch Linux LoongArch package maintainers
-	pkgver = 1.2.1.patch7
-	pkgrel = 4
+	pkgver = 1.2.1.patch8
+	pkgrel = 1
 	url = https://gitlab.archlinux.org/archlinux/devtools
 	arch = loong64
 	arch = x86_64
@@ -10,19 +10,23 @@ pkgbase = devtools-loong64
 	license = GPL-3.0-or-later
 	depends = devtools>=1:1.2.1
 	depends = qemu-user-static
+	provides = pacman-mirrorlist-loong64
+	backup = etc/pacman.d/mirrorlist-loong64
 	source = makepkg-loong64.patch
 	source = pacman-extra-loong64.patch
 	source = pacman-extra-testing-loong64.patch
 	source = pacman-extra-staging-loong64.patch
 	source = sogrep-loong64.patch
 	source = valid-repos-loong64.sh
+	source = mirrorlist-loong64
 	source = z-qemu-loong64-static-for-archpkg.conf
 	sha256sums = bd7509dc15a0c49a801d009733ec8c2df69ed5cb6e30aecdaa24c9f9920d5fc4
-	sha256sums = 9f59291ef061b943304b876ebdcd0c1f55b1681168f0984d2b8ca7e9200ee496
-	sha256sums = 598cf18e7edee2446c3b4661960fd50cbc812b1f28bc4e438efb620ffed518df
-	sha256sums = edcee3ed42642f0794a772b6f13b1f8bfb327c5d2011ef82466886769ece2a3a
+	sha256sums = 2356999e91739f9887057dbd1a9ee9cefda4971c85a91793a81f20922877e3b8
+	sha256sums = 63ad51bbb598673fdae9bba2cb483f996894262996543964951fb87b610586cd
+	sha256sums = 6b545a5579957cd4fef8303a7fa27e3f754d3bd1b7fe47c3a7bb049ebf917388
 	sha256sums = 1a508d14b8883a119caab7e60ce41893964bbc8f7c34ee0871a34b1aa9b613d5
 	sha256sums = 820cb7964fd724b88b3a4df87f3ca86b53c3d3e5c314024599dfc50afdcbc7a0
+	sha256sums = c0bd6d5a17ef903df4328cc94c393e22593389b00bce925932d6f60ba0b51fb8
 	sha256sums = 0fa4957e6a2097a288036d18953969ff765912518f5b6a01f983a3d2f7f6a8e1
 
 pkgname = devtools-loong64
