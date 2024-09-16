@@ -1,7 +1,7 @@
 # Maintainer: wszqkzqk <wszqkzqk@qq.com>
 
 _pkgver=1.2.1
-_patchver=8
+_patchver=9
 pkgname=devtools-loong64
 pkgver=${_pkgver}.patch${_patchver}
 pkgrel=1
@@ -20,7 +20,7 @@ sha256sums=('bd7509dc15a0c49a801d009733ec8c2df69ed5cb6e30aecdaa24c9f9920d5fc4'
             '2356999e91739f9887057dbd1a9ee9cefda4971c85a91793a81f20922877e3b8'
             '63ad51bbb598673fdae9bba2cb483f996894262996543964951fb87b610586cd'
             '6b545a5579957cd4fef8303a7fa27e3f754d3bd1b7fe47c3a7bb049ebf917388'
-            '1a508d14b8883a119caab7e60ce41893964bbc8f7c34ee0871a34b1aa9b613d5'
+            '3e048911fb330cd92d88c330c91232d8e271c892aa239c82d979ffedc20c215c'
             '820cb7964fd724b88b3a4df87f3ca86b53c3d3e5c314024599dfc50afdcbc7a0')
 
 if [[ ! "$CARCH" =~ loong ]]; then
@@ -29,7 +29,7 @@ if [[ ! "$CARCH" =~ loong ]]; then
   backup+=(etc/pacman.d/mirrorlist-loong64)
   source+=(mirrorlist-loong64
            z-qemu-loong64-static-for-archpkg.conf)
-  sha256sums+=('c0bd6d5a17ef903df4328cc94c393e22593389b00bce925932d6f60ba0b51fb8'
+  sha256sums+=('b0d95a78ea22f28dc9d0c450e7c7f376a8772e15b7140be034d4c0538a95f63c'
                '0fa4957e6a2097a288036d18953969ff765912518f5b6a01f983a3d2f7f6a8e1')
 fi
 
